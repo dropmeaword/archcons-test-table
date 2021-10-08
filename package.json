@@ -10,7 +10,7 @@
   "dependencies": {
     "imagekit-javascript": "1.4.1",
     "lodash": "4.17.21",
-    "motion": "10.0.3",
+    "motion": "^10.2.1",
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {
