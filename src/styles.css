@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: radial-gradient(#909090, #101010);
+}
+
+section {
+  width: 1100px;
+  display: flex;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  padding: 0;
+}
+
+.card {
+  height: 550px;
+  /* width: 360px; */
+  flex: 1;
+}
+
+/* .card + .card {
+  margin-left: 12px;
+} */
+
+.highlight {
+  margin: 0;
+  padding: 0;
+  border: 8px ridge rgba(170, 50, 220, 0.6);
+}
+
+.debug {
+  /* padding: 6px; */
+  border: 2px dotted #ff0000;
+}
