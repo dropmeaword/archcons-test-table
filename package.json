@@ -8,6 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "graphql-subscriptions-client": "^0.16.2",
     "imagekit-javascript": "1.4.1",
     "lodash": "4.17.21",
     "motion": "^10.2.1",
