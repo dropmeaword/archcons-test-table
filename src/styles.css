@@ -1,13 +1,90 @@
+:root {
+  --fgheader: #f0f0f0;
+  --fgcolor: #909090;
+  --bgcolor: #101010;
+}
+
+svg {
+  background-color: var(--bgcolor);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: radial-gradient(#909090, #101010);
+  font-family: "Recursive", sans-serif;
+  height: 100vh;
+  background: var(--bgcolor);
+  /*radial-gradient(var(--fgcolor), var(--bgcolor));*/
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><circle cx='10' cy='10' r='1' fill='var(--fgcolor)'></circle></svg>");
 }
 
-section {
-  width: 1100px;
+a {
+  color: var(--fgheader);
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* a::after {
+  content: &#129125;
+} */
+
+#bookinfo {
+  color: var(--fgheader);
+  padding: 2vw 4vw;
+  /*
   display: flex;
+  align-items: center;
+  justify-content: center;
+  */
+}
+
+#bookinfo > dl {
+  padding: 0;
+  margin: 0;
+}
+
+#bookinfo > dl > dt {
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 18pt;
+  --mono: "MONO" 1;
+  --casl: "CASL" 0;
+  --wght: "wght" 560;
+  --slnt: "slnt" 0;
+  --CRSV: "CRSV" 0.5;
+  font-variation-settings: var(--mono), var(--casl), var(--wght), var(--slnt),
+    var(--CRSV);
+}
+
+.author {
+  font-size: 14pt;
+}
+
+.locator {
+  font-size: 11pt;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {

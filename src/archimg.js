@@ -1,5 +1,5 @@
-const ImageKit = require("imagekit-javascript");
-const _ = require("lodash");
+const ImageKit = require("imagekit-javascript")
+const _ = require("lodash")
 
 /**
  * ARCHCONS image lookup library
@@ -7,30 +7,30 @@ const _ = require("lodash");
  * (cc) 2021 studio derfunke
  */
 function Archi(bucketaddr) {
-  console.log(`Archi image library points to bucket ${bucketaddr}`);
+  console.log(`Archi image library points to bucket ${bucketaddr}`)
 
   // initialize ImageKit api
   this.ikit = new ImageKit({
     urlEndpoint: bucketaddr
-  });
+  })
 
-  this.cover = function (col, ref, xform = [{ height: 500, width: 350 }]) {
+  this.cover = function (col, ref, xform = [{ height: 550, width: 360 }]) {
     return this.ikit.url({
       // path: `/collections/${col}/scans/${ref}__cvr.jpg`,
-      path: `/collections/${col}/${ref}__cvr.jpg`,
+      path: `/collections/${col}/scans/${ref}__cvr.jpg`,
       transformation: [...xform]
-    });
-  };
+    })
+  }
 
   // from https://github.com/imagekit-developer/imagekit-javascript
   // https://archcons-images.s3.nl-ams.scw.cloud/collections/deappel/arm-b-2__00002.jpg
   this.lookup = function (col, ref, plate, xform) {
     return this.ikit.url({
-      path: `/collections/${col}/${ref}__${plate}.jpg`,
+      path: `/collections/${col}/scans/${ref}__${plate}.jpg`,
       // path: "/collections/deappel/arm-b-2__00002.jpg",
       transformation: [...xform]
-    });
-  }; // lookup
+    })
+  } // lookup
 
   /*
       transformation: [
@@ -48,4 +48,4 @@ function Archi(bucketaddr) {
 
 //var ARCHI = new Archi();
 
-export { Archi };
+export { Archi }

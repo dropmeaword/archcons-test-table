@@ -2,24 +2,43 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Trying motion</title>
+    <title>ARCHCONS - TABLE TEST VISUALIZER</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/styles.css" />
   </head>
 
   <body>
-    <section id="container" class="slider">
-      <div class="card">
-        <img src="https://picsum.photos/360/550" />
-      </div>
+    <div class="container">
 
-      <div class="card">
-        <img src="https://picsum.photos/360/550" />
-      </div>
+      <section id="bookinfo" class="top">
+        <dl>
+          <dt id="deposit-title" class="title">Book title</dt>
+          <dt id="deposit-author" class="author"><a href="#">Author Name-Surname</a></dt>
+          <dt id="deposit-locator" class="locator"><a href="#">cad-4-2</a><dt>
+        </div>
+      </section>
 
-      <div class="card">
-        <img src="https://picsum.photos/360/550" />
-      </div>
-    </section>
+      <section id="carousel" class="slider">
+        <div class="card">
+          <img id="cover-dummy" src="https://dummyimage.com/360x550/aaa/999" />
+        </div>
+
+        <div class="card">
+          <img id="cover-dummy-2" src="https://dummyimage.com/360x550/aaa/999" />
+        </div>
+
+        <div class="card">
+          <img id="cover-dummy-3" src="https://dummyimage.com/360x550/aaa/999" />
+        </div>
+      </section>
+
+    </div>
 
     <script src="src/index.js"></script>
   </body>
