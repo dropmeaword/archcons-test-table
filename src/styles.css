@@ -72,19 +72,19 @@ a:hover {
 }
 
 #container {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 #carousel {
   width: 100vw;
   height: 85vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 img {
@@ -93,13 +93,18 @@ img {
 }
 
 .card {
-  padding: 0;
+  padding: 0 10px;
 }
 
 .card {
   height: 550px;
   /* width: 360px; */
   flex: 1;
+}
+
+.current {
+  margin: 0 20px;
+  transform: scale(5);
 }
 
 /* .card + .card {

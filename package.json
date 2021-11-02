@@ -1,5 +1,5 @@
 {
-  "name": "archcons-test-table",
+  "name": "archcons-test-table-original",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -8,10 +8,10 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "graphql-subscriptions-client": "^0.16.2",
+    "graphql-subscriptions-client": "0.16.2",
     "imagekit-javascript": "1.4.1",
     "lodash": "4.17.21",
-    "motion": "^10.2.1",
+    "motion": "10.0.3",
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {
